@@ -1,6 +1,6 @@
 # 🔄 TOON Converter Pro
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/[VOTRE_USERNAME]/toon-converter)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Dama_Soumana/toon-converter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Optimisez vos tokens LLM avec le format compact TOON**
@@ -41,7 +41,7 @@ TOON est un format de sérialisation compact qui :
 
 ```bash
 # Cloner le repo
-git clone https://github.com/[VOTRE_USERNAME]/toon-converter.git
+git clone https://github.com/Damasoumana1/toon-converter.git
 cd toon-converter
 
 # Installer les dépendances
@@ -105,10 +105,10 @@ print(json.dumps(obj, indent=2))
 
 ## 👤 Auteur
 
-**[VOTRE NOM]**
+**Dama Soumana**
 
-- GitHub: [@VOTRE_USERNAME](https://github.com/VOTRE_USERNAME)
-- Hugging Face: [@VOTRE_USERNAME](https://huggingface.co/VOTRE_USERNAME)
+- GitHub: [@Damasoumana1](https://github.com/Damasoumana1)
+- Hugging Face: [@Dama_Soumana](https://huggingface.co/Dama_Soumana)
 
 ## 📄 Licence
 

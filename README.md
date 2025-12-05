@@ -1,6 +1,6 @@
 # 🔄 TOON Converter Pro
 
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Dama_Soumana/toon-converter)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Dama12/toon-converter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Optimisez vos tokens LLM avec le format compact TOON**
@@ -108,7 +108,7 @@ print(json.dumps(obj, indent=2))
 **Dama Soumana**
 
 - GitHub: [@Damasoumana1](https://github.com/Damasoumana1)
-- Hugging Face: [@Dama_Soumana](https://huggingface.co/Dama_Soumana)
+- Hugging Face: [@Dama12](https://huggingface.co/Dama12)
 
 ## 📄 Licence
 

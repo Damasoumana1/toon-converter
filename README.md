@@ -1,21 +1,32 @@
+---
+title: Toon Converter
+emoji: 🔄
+colorFrom: purple
+colorTo: pink
+sdk: streamlit
+sdk_version: 1.28.0
+app_file: app.py
+pinned: false
+---
+
 # 🔄 TOON Converter Pro
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Dama12/toon-converter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Optimisez vos tokens LLM avec le format compact TOON**
+**Optimize your LLM tokens with the compact TOON format**
 
-TOON Converter Pro est un outil qui convertit des données JSON en un format compact appelé "TOON", réduisant significativement le nombre de tokens utilisés lors des interactions avec les LLM (GPT-4, Claude, etc.).
+TOON Converter Pro is a tool that converts JSON data into a compact format called "TOON", significantly reducing the number of tokens used during interactions with LLMs (GPT-4, Claude, etc.).
 
-## 🎯 Qu'est-ce que TOON ?
+## 🎯 What is TOON?
 
-TOON est un format de sérialisation compact qui :
-- Remplace les accolades `{}` par des parenthèses `()`
-- Utilise `;` comme séparateur de paires clé-valeur
-- Utilise `:` pour séparer clé et valeur
-- Supprime les guillemets autour des clés et valeurs simples
+TOON is a compact serialization format that:
+- Replaces curly braces `{}` with parentheses `()`
+- Uses `;` as the key-value pair separator
+- Uses `:` to separate key and value
+- Removes quotes around keys and simple values
 
-### Exemple
+### Example
 
 **JSON (47 tokens):**
 ```json
@@ -27,52 +38,52 @@ TOON est un format de sérialisation compact qui :
 (name:John;age:30;skills:[Python,JavaScript])
 ```
 
-**Gain: ~40% de tokens économisés!**
+**Gain: ~40% tokens saved!**
 
-## 🚀 Fonctionnalités
+## 🚀 Features
 
-- ✅ **JSON → TOON** : Conversion instantanée avec statistiques
-- ✅ **TOON → JSON** : Parsing inverse pour retrouver le JSON
-- ✅ **Upload de fichiers** : Convertissez des fichiers JSON/TXT
-- ✅ **Analyse de datasets** : Calculez le gain sur des collections
-- ✅ **Analyse intelligente** : Évaluation détaillée de la structure
+- ✅ **JSON → TOON**: Instant conversion with statistics
+- ✅ **TOON → JSON**: Reverse parsing to retrieve JSON
+- ✅ **File Upload**: Convert JSON/TXT files
+- ✅ **Dataset Analysis**: Calculate gain on collections
+- ✅ **Smart Analysis**: Detailed evaluation of the structure
 
-## 💻 Installation locale
+## 💻 Local Installation
 
 ```bash
-# Cloner le repo
+# Clone the repo
 git clone https://github.com/Damasoumana1/toon-converter.git
 cd toon-converter
 
-# Installer les dépendances
+# Install dependencies
 pip install -r requirements.txt
 
-# Lancer l'application
+# Run the application
 streamlit run app.py
 ```
 
-## 🤗 Déploiement sur Hugging Face Spaces
+## 🤗 Deployment on Hugging Face Spaces
 
-1. Créez un nouveau Space sur [Hugging Face](https://huggingface.co/new-space)
-2. Sélectionnez **Streamlit** comme SDK
-3. Uploadez les fichiers :
+1. Create a new Space on [Hugging Face](https://huggingface.co/new-space)
+2. Select **Streamlit** as SDK
+3. Upload the files:
    - `app.py`
    - `requirements.txt`
    - `README.md`
-4. Le Space sera automatiquement déployé !
+4. The Space will be automatically deployed!
 
-## 📁 Structure du projet
+## 📁 Project Structure
 
 ```
 toon-converter/
-├── app.py              # Application Streamlit principale
-├── requirements.txt    # Dépendances Python
+├── app.py              # Main Streamlit application
+├── requirements.txt    # Python dependencies
 └── README.md          # Documentation
 ```
 
-## 🔧 API Python
+## 🔧 Python API
 
-Vous pouvez aussi utiliser les fonctions directement :
+You can also use the functions directly:
 
 ```python
 from app import flatten_to_toon, toon_to_json_obj
@@ -90,32 +101,32 @@ print(json.dumps(obj, indent=2))
 
 ## 📊 Benchmarks
 
-| Type de données | Gain moyen |
+| Data Type | Average Gain |
 |-----------------|------------|
-| API responses   | 35-45%     |
-| Configuration   | 25-35%     |
-| Nested objects  | 40-50%     |
-| Arrays          | 30-40%     |
+| API responses | 35-45% |
+| Configuration | 25-35% |
+| Nested objects | 40-50% |
+| Arrays | 30-40% |
 
 ## ⚠️ Limitations
 
-- Les valeurs contenant `;`, `:`, `(`, `)`, `[`, `]` peuvent causer des ambiguïtés
-- Les booléens et null sont convertis en texte (`True`, `False`, `None`)
-- Format optimisé pour la lecture par LLM, pas pour le stockage permanent
+- Values containing `;`, `:`, `(`, `)`, `[`, `]` may cause ambiguities
+- Booleans and null are converted to text (`True`, `False`, `None`)
+- Format optimized for reading by LLMs, not for permanent storage
 
-## 👤 Auteur
+## 👤 Author
 
 **Dama Soumana**
 
 - GitHub: [@Damasoumana1](https://github.com/Damasoumana1)
 - Hugging Face: [@Dama12](https://huggingface.co/Dama12)
 
-## 📄 Licence
+## 📄 License
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
 
 ---
 
 <p align="center">
-  Fait avec ❤️ pour la communauté LLM
+  Made with ❤️ for the LLM community
 </p>

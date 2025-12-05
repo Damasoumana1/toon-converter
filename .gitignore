@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.qodo/
+*.tmp
+temp/

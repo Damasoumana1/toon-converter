@@ -5,6 +5,7 @@ colorFrom: purple
 colorTo: pink
 sdk: streamlit
 sdk_version: 1.28.0
+app_file: toon_main.py
 
 pinned: false
 ---

@@ -5,7 +5,7 @@ colorFrom: purple
 colorTo: pink
 sdk: streamlit
 sdk_version: 1.28.0
-app_file: toon_main.py
+app_file: app.py
 
 pinned: false
 ---
@@ -60,7 +60,7 @@ cd toon-converter
 pip install -r requirements.txt
 
 # Run the application
-streamlit run app.py
+streamlit run toon_main.py
 ```
 
 ## 🤗 Deployment on Hugging Face Spaces
@@ -68,7 +68,7 @@ streamlit run app.py
 1. Create a new Space on [Hugging Face](https://huggingface.co/new-space)
 2. Select **Streamlit** as SDK
 3. Upload the files:
-   - `app.py`
+   - `toon_main.py`
    - `requirements.txt`
    - `README.md`
 4. The Space will be automatically deployed!
@@ -77,7 +77,7 @@ streamlit run app.py
 
 ```
 toon-converter/
-├── app.py              # Main Streamlit application
+├── toon_main.py        # Main Streamlit application
 ├── requirements.txt    # Python dependencies
 └── README.md          # Documentation
 ```
@@ -87,7 +87,7 @@ toon-converter/
 You can also use the functions directly:
 
 ```python
-from app import flatten_to_toon, toon_to_json_obj
+from toon_main import flatten_to_toon, toon_to_json_obj
 import json
 
 # JSON → TOON
